@@ -46,9 +46,11 @@ button.main-btn:hover{
 	background-color: #fff;
 }
 
-.wrapper{
-	width: 1000px;
+.wrapper{asdasd
+	min-width: 1140px;
+	width: 100%;
 	margin: 0 auto;
+	padding: 0 15px;
 }
 
 section{
@@ -253,11 +255,11 @@ footer .footer-copyright p{
 
 
 
+/*
 
-
-@media screen and (max-width: 1024px) {
+@media (max-width: 1024px) {
 	.wrapper{
-		width: 900px;
+		max-width: 900px;
 	}
 	h1{
 		font-size: 3rem;
@@ -276,9 +278,9 @@ footer .footer-copyright p{
 } 
 
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
 	.wrapper{
-		width: 600px;
+		max-width: 600px;
 	}
 	h1{
 		font-size: 70px;
@@ -310,15 +312,15 @@ footer .footer-copyright p{
 
 }
 
-@media screen and (max-width: 411px) {
+@media (max-width: 411px) {
 	h1{
 		font-size: 40px;
 	}
 }
 
 
-@media screen and (min-width: 1440px) {
+@media (min-width: 1440px) {
 	.wrapper{
-		width: 1200px;
+		max-width: 1200px;
 	}
-} 
+} */
