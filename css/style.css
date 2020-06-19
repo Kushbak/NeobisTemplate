@@ -47,7 +47,7 @@ button.main-btn:hover{
 }
 
 .wrapper{
-	min-width: 1140px;
+	min-width: 1170px;
 	width: 100%;
 	margin: 0 auto;
 	padding: 0 15px;
@@ -247,15 +247,7 @@ footer .footer-copyright p{
 }
 
 
-
-
-
-
-
-
-
-
-/*
+ /*
 
 @media (max-width: 1024px) {
 	.wrapper{
@@ -323,4 +315,5 @@ footer .footer-copyright p{
 	.wrapper{
 		max-width: 1200px;
 	}
-} */
+}
+*/
