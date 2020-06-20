@@ -2,6 +2,9 @@ html, body, *{
 	margin: 0;
 	padding: 0;
 }
+body{
+	overflow-x: hidden;
+}
 :root{
 	font-size: 16px;
 	--primary-color: #ff4e2e;
@@ -12,6 +15,25 @@ a{
 	text-decoration: none;
 	color: #000;
 }
+
+.wrapper{
+	max-width: 1170px;
+	width: 100%;
+	margin: 0 auto; 
+} 
+section{
+	padding: 40px 0;
+}
+h1{
+	font-size: 3.4rem;
+}
+h2{
+	font-size: 2.2rem;
+	text-align: center;
+	margin: 10px 0 60px;
+}
+
+
 
 button.call-btn{
 	border: 1px solid var(--secondary-color);
@@ -46,24 +68,6 @@ button.main-btn:hover{
 	background-color: #fff;
 }
 
-.wrapper{
-	min-width: 1170px;
-	width: 100%;
-	margin: 0 auto;
-	padding: 0 15px;
-}
-
-section{
-	padding: 40px 0;
-}
-h1{
-	font-size: 3.4rem;
-}
-h2{
-	font-size: 2.2rem;
-	text-align: center;
-	margin: 10px 0 60px;
-}
 
 
 header{
@@ -186,16 +190,18 @@ section.portfolio div{
 
 
 section.cost{
-	background: var(--primary-color);
+	background: var(--primary-color); 
+	color: #FFF; 
 	padding-left: 60px;
-	color: #FFF;
 }
 section.cost p.primary-text{
-	font-size: 2.2rem;
+	width: 80%;
+    font-size: 2rem;
 	font-weight: bold;
 	margin-bottom: 20px;
 }
 section.cost p.secondary-text{
+	width: 54%;
 	font-size: 0.8rem; 
 	margin: 10px 0;
 }
@@ -249,70 +255,98 @@ footer .footer-copyright p{
 
  
 
-@media (max-width: 1024px) {
+@media (min-width: 576px){
 	.wrapper{
-		max-width: 900px;
+		max-width: 540px;
 	}
-	h1{
-		font-size: 3rem;
+}
+@media (min-width: 768px){
+	.wrapper{
+		max-width: 720px;
 	}
-
-	header .nav-call p.phone{
-		font-size: 1.3rem;
+}  
+@media (min-width: 992px){ 
+	.wrapper{
+		max-width: 960px;
 	}
- 	
- 	section.cost p.primary-text{
- 		font-size: 2rem;
- 	}
- 	section.cost p.secondary-text{
- 		font-size: 0.9rem;
- 	}
+}
+@media (min-width: 1440px){ 
+	.wrapper{
+		max-width: 1140px;
+		width: 100%;
+	} 
 } 
 
 
+
+
+
+
+ 
+
+
 @media (max-width: 768px) {
-	.wrapper{
-		max-width: 600px;
-	}
-	h1{
-		font-size: 70px;
-	}
-	header .nav-call p.phone{
-		font-size: 1rem;
-	}
-	 	
+	:root{
+		font-size: 13px;
+	}  
 	section.services .services-block{ 
 		grid-template-columns: repeat(2, 1fr); 
 	} 
 	section.services .services-block .service{ 
 		margin-bottom: 30px;
-	} 
+	}  
 
-	section.cost p.primary-text {
-	    font-size: 1.4rem;
+}
+
+@media (max-width: 578px) {
+	:root{
+		font-size: 12px;
+	} 
+	.wrapper{
+		padding: 0 15px;
+		width: auto;
+	}
+	button.call-btn{
+		padding: 10px 20px;
+	}
+	button.main-btn{
+		padding: 12px 30px;
+	}
+	header .wrapper{
+		display: block;
+	} 
+	header .nav-links{
+		-webkit-justify-content: space-around;
+		         justify-content: space-around; 
+	} 
+	header .nav-call{ 
+	    display: flex;
+	    -webkit-justify-content: space-around;
+		         justify-content: space-around; 
+	} 
+	header .nav-call p.phone{ 
+		font-size: 1.3rem;
+		font-weight: bold;
+		margin-right: 0px; 
+	}
+	section.cost p.primary-text{
+		width: 90%;
+		font-size: 12px 30px;
 	}
 	section.cost p.secondary-text {
-	    font-size: 0.7rem;
+		width: 80%;
+	} 
+	footer .wrapper{
+		-webkit-flex-direction: column;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
 	}
-
+	footer .wrapper div{
+		margin-bottom: 20px;
+	}
 	footer .footer-block .footer-contacts p {
-	    font-size: 1rem;
-	}
-	footer .footer-block .footer-links p { 
 	    font-size: 0.8rem;
-	}
-
-}
-
-@media (max-width: 411px) {
-	h1{
-		font-size: 40px;
-	}
+    }
 }
 
 
-@media (min-width: 1440px) {
-	.wrapper{
-		max-width: 1200px;
-	}
-}
