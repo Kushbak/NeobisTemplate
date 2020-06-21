@@ -298,10 +298,7 @@ footer .footer-copyright p{
 
 }
 
-@media (max-width: 578px) {
-	:root{
-		font-size: 12px;
-	} 
+@media (max-width: 578px) { 
 	.wrapper{
 		padding: 0 15px;
 		width: auto;
@@ -329,6 +326,9 @@ footer .footer-copyright p{
 		font-weight: bold;
 		margin-right: 0px; 
 	}
+	section.services .services-block{ 
+		grid-template-columns: repeat(1, 1fr); 
+	} 
 	section.cost p.primary-text{
 		width: 90%;
 		font-size: 12px 30px;
@@ -340,6 +340,7 @@ footer .footer-copyright p{
 		-webkit-flex-direction: column;
 		    -ms-flex-direction: column;
 		        flex-direction: column;
+		        text-align: center;
 	}
 	footer .wrapper div{
 		margin-bottom: 20px;
