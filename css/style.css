@@ -299,9 +299,15 @@ footer .footer-copyright p{
 }
 
 @media (max-width: 578px) { 
+	:root{
+		font-size: 12px;
+	}
 	.wrapper{
 		padding: 0 15px;
 		width: auto;
+	}
+	h1 {
+	    font-size: 3rem;
 	}
 	button.call-btn{
 		padding: 10px 20px;
@@ -335,7 +341,7 @@ footer .footer-copyright p{
 	}
 	section.cost p.secondary-text {
 		width: 80%;
-	} 
+	} s
 	footer .wrapper{
 		-webkit-flex-direction: column;
 		    -ms-flex-direction: column;
